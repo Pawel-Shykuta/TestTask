@@ -1,0 +1,45 @@
+ .FormHeader {
+    width: 60%;
+    height: 150px;
+
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    border-top: 13px solid rgb(99, 10, 184);
+    border-left: 6px solid rgb(0, 89, 255);
+
+    transition: height 0.5s ease, box-shadow 0.3s ease;
+
+    &:focus-within {
+      height: 180px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    input {
+      width: 100%;
+
+      font-size: 20px;
+      font-weight: 500;
+      border: none;
+      border-bottom: 2px solid #dadce0;
+      padding: 8px 4px;
+
+      
+      &:focus {
+        outline: none;
+        border-bottom: 2px solid #673ab7; 
+      }
+    }
+
+    
+      .NameINput input{
+        font-size: 25px;
+      
+      }    
+  }

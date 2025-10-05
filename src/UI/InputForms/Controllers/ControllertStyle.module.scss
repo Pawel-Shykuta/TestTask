@@ -1,0 +1,41 @@
+.controllers {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .mandatory {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10px;
+    }
+
+    .DellCartBtn {
+        width: 50px; 
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: #f44336; 
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        transition: background 0.2s, transform 0.1s ease;
+
+        &:hover {
+        background: #d32f2f;
+        transform: translateY(-2px);
+        }
+
+        &:active {
+        background: #b71c1c;
+        transform: translateY(0);
+        }
+    }
+}

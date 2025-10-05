@@ -1,0 +1,153 @@
+.OptionsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #f9fafb;
+
+  .OptionsCon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 10px 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.2s ease, transform 0.1s ease;
+
+    &:hover {
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      transform: translateY(-2px);
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 10px 12px;
+      border: 1px solid #d0d7de;
+      border-radius: 8px;
+      background-color: #fefefe;
+      font-size: 15px;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+      &:focus {
+        border-color: #1a73e8;
+        box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.15);
+        outline: none;
+      }
+    }
+
+    .wariantsCon {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex: 1;
+
+      .correct {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        label {
+          font-size: 15px;
+          color: #333;
+        }
+
+        input {
+          width: 20px;
+          height: 20px;
+          accent-color: #1a73e8;
+          cursor: pointer;
+        }
+      }
+
+      .inputCorrect {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        label {
+          font-size: 15px;
+          color: #333;
+        }
+
+        input {
+          width: 230px;
+          padding: 8px 10px;
+          border-radius: 8px;
+          border: 1px solid #d0d7de;
+        }
+      }
+    }
+
+    .DellWariant {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      border-radius: 50%;
+      background: #f8f9fa;
+      cursor: pointer;
+      position: relative;
+      transition: background 0.2s ease, transform 0.1s ease;
+
+      &:hover {
+        background: #e8eaed;
+        transform: rotate(90deg);
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 18px;
+        background-color: #999;
+        border-radius: 2px;
+        transition: background 0.2s ease;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+
+      &:hover::before,
+      &:hover::after {
+        background-color: #d93025;
+      }
+    }
+  }
+
+  .addWariants {
+    align-self: center;
+    width: 60%;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #1a73e8, #4a90e2);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+
+    &:hover {
+      background: linear-gradient(90deg, #1669c1, #357ae8);
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(0);
+      background: #135ab4;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.ChangeFormWrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f0ebf8; // светлый сиреневый фон Google Forms
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  gap: 20px;
+
+ 
+
+  .QuestionCard {
+    width: 60%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    transition: all .1s ease;
+
+    &:focus-within{
+      border-left: 6px solid rgb(0, 89, 255);
+      padding: 20px 30px;
+    }
+
+    input[type="text"] {
+      font-size: 16px;
+      border: none;
+      border-bottom: 1px solid #dadce0;
+      padding: 6px;
+
+      &:focus {
+        outline: none;
+        border-bottom: 2px solid #673ab7;
+      }
+    }
+
+    .QuestionInput{
+      width: 100%;
+      height: 50px;
+      
+
+      input{
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
+        color: rgb(32, 29, 29);
+      }
+    }
+
+
+  }
+
+ 
+
+
+  .AdQuestion{
+    width: 30%;
+    
+    height: 40px;
+
+    border-radius: 10px;
+    border: 1px solid silver;
+    cursor: pointer;
+    background-color: #c8a6fd;
+
+    transition: all .3s ease;
+
+    &:hover{
+      transform: scale(1.05);
+    }
+    &:active{
+      transform: scale(1);
+    }
+  }
+
+  .SaveForm{
+    width: 25%;
+    height: 40px;
+
+    background-color: #2a66e0bb;
+    border: 1px solid silver;
+
+    border-radius: 6px;
+    margin-top: 30px;
+
+    color: white;
+    font-size: 20px;
+
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &:hover{
+      transform: scale(1.05);
+    }
+    &:active{
+      transform: scale(1);
+    }
+  }
+
+  .DellForm{
+    width: 10%;
+    height: 30px;
+
+    background-color: red;
+    border: 1px solid silver;
+
+    border-radius: 6px;
+    margin-left: 50%;
+    margin-top: 30px;
+
+    color: white;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &:hover{
+      transform: scale(1.05);
+    }
+    &:active{
+      transform: scale(1);
+    }
+  }
+
+}

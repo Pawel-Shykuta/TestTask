@@ -1,0 +1,34 @@
+  .buttonsControllers{
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+
+    button:nth-child(2){
+      background-color: rgb(219, 14, 14);
+      color: white;
+      font-size: 20px;
+    }
+  }
+
+  .AddAntswer{
+    width: 30%;
+    margin-left: 35%;
+    height: 30px;
+
+    border-radius: 5px;
+    border: 1px solid silver;
+    cursor: pointer;
+
+    background-color: #f0ebf8;
+
+    transition: all .3s ease;
+
+    &:hover{
+      transform: scale(1.05);
+    }
+    &:active{
+      transform: scale(1);
+    }
+  }

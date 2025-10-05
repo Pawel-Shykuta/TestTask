@@ -1,0 +1,97 @@
+ .OptionRow {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    justify-content: space-between;
+
+
+    input[type="text"] {
+      flex: 1;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+    }
+
+
+    .Anchwer input{
+      width: 200px;
+      height: 40px;
+
+      border: 1px solid silver;
+      border-radius: 4px;
+
+      font-size: 17px;
+      padding: 10px;
+    }
+
+    .Correct{
+      display: flex;
+      flex-direction: row-reverse;
+      
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      input{
+        cursor: pointer;       
+      }
+    }
+    
+
+    .DellUnchwer{
+      width: 30px;
+      height: 30px;
+
+      background-color: transparent;
+      border: 1px solid silver;
+      border-radius: 5px;
+
+      position: relative;
+      cursor: pointer;
+
+      transition: all .3s ease;
+
+      &:hover{
+        transform: scale(1.05);
+      }
+
+      &:active{
+        transform: scale(1);
+      }
+
+      &::before{
+        content: '';
+
+        width: 2px;
+        height: 90%;
+
+        background-color: silver;
+
+        position: absolute;
+
+        top: 4%;
+        left: 45%;
+        transform: rotate(45deg);
+      }
+
+      &::after{
+        content: '';
+
+        width: 2px;
+        height: 90%;
+
+        background-color: silver;
+
+        position: absolute;
+
+        top: 4%;
+        left: 45%;
+        transform: rotate(-45deg);
+      }
+
+    }
+  }
